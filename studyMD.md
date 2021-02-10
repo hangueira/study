@@ -73,7 +73,7 @@ _hks_
 
 ---
 
-## link 만들기
+## Link 만들기
 
 #### [], () 사용
 
@@ -83,10 +83,46 @@ Click [link](https://github.com/hangueira)
 
 ---
 
-## image 만들기
+## Image 만들기
 
 #### !, [], () 사용
 
 ```mr
 ! [link](image url or local address)
+```
+
+---
+
+## Table 만들기
+
+#### - |로 감싸고 하단에 |--| 동일하게 추가하면 테이블 생성
+
+```mr
+|hks|min|
+|--|--|
+```
+
+#### |--:|--:| :위치로 왼 or 오 or 중앙 정렬 가능
+
+```mr
+|hks|min|
+|--:|--:|
+|1|2|
+```
+
+---
+
+## Task list 만들기
+
+- [x] test1
+- [x] test2
+
+---
+
+## Image 규격 통일
+
+#### Html img tag 사용하여 width 주게 되면 일관성있게 사진추가 가능
+
+```html
+<img src="img" alt="img bulabula" width="400" />
 ```
