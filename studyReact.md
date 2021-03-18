@@ -198,3 +198,50 @@ return (
 }
 
 - 중간에 자바스크립트 코드도 작성이 가능하다.
+
+## 실제로 컴포넌트 만들어보기
+
+클래스는 항상 대문자로 변경하고 진행하기
+
+app.jsx 에서 habit.jsx 호출할려고 한다.
+아래처럼 호출하면 된다.
+app.jsx
+function App() {
+  return <habit />;
+}
+
+class Habit extends Component{
+  render() {
+    return 
+    <>
+      <span className="habit-name">Redading</span>
+      <span className="habit-name">Redading</span>
+    </>
+  }
+  
+}
+
+팁) 폰트오쏨 명령어:
+
+yarn add @fortawesome/fontawesome-free
+
+index.js에 추가해야 하는 코드:
+
+import '@fortawesome/fontawesome-free/js/all.js';
+
+yarn에서 fontawesome free version down 가능함
+ctrl + p 누르면 간단하게 파일 이동 가능
+
+
+## state 이해하기
+
+state는 오브젝트이다!
+
+this.setState({ count: this.stat.count + 1});
+
+이렇게 변경해줘야 render 함수가 호출이 된다
+
+
+
+
+
